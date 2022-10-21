@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile='Immersive'> 
+  <Scene>
+    <Shape>
+           <Text string="Hola Mundo!"/>
+    </Shape>
+  </Scene>
+</X3D>
