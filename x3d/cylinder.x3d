@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile='Immersive'>
+<Scene>
+<Shape>
+<Appearance>
+<Material/>
+</Appearance>
+<Cylinder height = ' 2 ' radius= ' 2 ' side= 'TRUE' bottom= 'FALSE'/>
+</Shape>
+</Scene>
+</X3D>

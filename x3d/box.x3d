@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile='Immersive'>
+<Scene>
+<Shape>
+<Appearance>
+<Material/>
+</Appearance>
+<Box size = ' 1 1 1 '/>
+</Shape>
+</Scene>
+</X3D>
