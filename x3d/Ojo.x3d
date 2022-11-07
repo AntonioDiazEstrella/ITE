@@ -3,10 +3,10 @@
   <Scene>
     <Shape>
       <Appearance>
-         <Material diffuseColor=' 1 0 0 '/>
-         <ImageTexture url='ojo.PNG'/>
+         <Material diffuseColor=' 1 0 0 '></Material>
+        <ImageTexture url='ojo.PNG'></ImageTexture>
       </Appearance>
-      <Sphere radius = '1'/>
+      <Sphere radius = '1'></Sphere>
     </Shape>
   </Scene>
 </X3D>
