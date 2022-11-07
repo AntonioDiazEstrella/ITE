@@ -2,6 +2,7 @@
 <X3D profile='Immersive'> 
   <Scene>
     <Shape>
+      <Appearance><Material/></Appearance>
           <Text string="Hola Mundo!">
               <FontStyle justify= ' "FIRST" ' style= "PLAIN" size= "1.0" ></FontStyle>
           </Text>
