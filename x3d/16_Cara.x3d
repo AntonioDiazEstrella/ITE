@@ -27,7 +27,7 @@
       <Shape DEF='ojo'>
         <Appearance>
           <Material diffuseColor='1 1 1'/>
-          <ImageTexture url='texturas/ojo.png'/>
+          <ImageTexture url='texturas/ojo.PNG'/>
         </Appearance>
         <Sphere radius='0.09'/>
       </Shape>
