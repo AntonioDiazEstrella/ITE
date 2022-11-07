@@ -4,7 +4,7 @@
     <Shape>
       <Appearance>
         <ImageTexture url='texturas/ojo.png '></ImageTexture>
-        <Material diffuseColor=' 1 0 0 '></Material>
+        <Material diffuseColor=' 1 1 1 '></Material>
       </Appearance>
       <Sphere radius = '1'></Sphere>
     </Shape>
