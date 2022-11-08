@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<X3D profile='Immersive'>
+  <Scene>
+    <Background groundAngle='0.1 1.309 1.57' groundColor='0 0 0 0 0.1 0.3 0 0.2 0.5 0 0.3 0.8' skyAngle='0.1 0.15 1.309 1.57' skyColor='0.4 0.4 0.4 0.4 0.4 0.4 0 0.1 0.5 0 0.2 0.4 0.5 0.2 0.8' 
+			backUrl=  '"texturas/bosque/forest_1_back.jpg"' 
+			bottomUrl='"texturas/bosque/forest_1_bottom.jpg"' 
+			frontUrl= '"texturas/bosque/forest_1_front.jpg"' 
+			leftUrl=  '"texturas/bosque/forest_1_left.jpg"' 
+			rightUrl= '"texturas/bosque/forest_1_right.jpg"' 
+			topUrl=   '"texturas/bosque/forest_1_top.jpg"'></Background> 
+	<Inline url= '"Ojo.x3d"'></Inline>
+  </Scene>
+</X3D>
