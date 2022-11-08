@@ -28,7 +28,7 @@
               shininess='0'/>
         </Appearance>
         <Text
-            string='"Ubuntu"'>
+            string='"Hola Mundo"'>
           <FontStyle
               family='"SANS"'
               style='BOLD'/>
