@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<X3D profile='Immersive'>
+  <Engine DEF='engine'>
+    <RenderJob DEF='render'>
+      <WindowGroup>
+        <Window size='300 300'>
+          <Viewarea red='true' green='false' blue='false'>
+            <ShearedStereoViewModifier zeroParallaxDistance= '3' overlap='1'  leftEye='true' eyeSeparation='0.08'/>
+          </Viewarea>
+          <Viewarea red='false' green='false' blue='true'>
+            <ShearedStereoViewModifier zeroParallaxDistance= '3' overlap='1' rightEye='true' eyeSeparation='0.08'/>
+          </Viewarea>
+        </Window>
+      </WindowGroup>
+    </RenderJob>
+  </Engine>
+  <Scene DEF='scene'>
+    <Inline url='"Paralajes.x3d"'/>
+  </Scene>
+</X3D>

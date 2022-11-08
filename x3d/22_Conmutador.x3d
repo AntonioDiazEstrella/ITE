@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D>
+  <Scene DEF='scene'>
+  
+    <Viewpoint position='0 5 8' orientation='1 0 0 -0.35'/>
+     
+	<!-- <Transform DEF = 'boton' translation= '0 0.2 0'> -->
+	<TouchSensor DEF='pulsador'/> 
+    <Shape>
+        <Appearance>
+              <Material DEF = 'mat' diffuseColor=' 0.3 0.2 0.1 '></Material>
+        </Appearance>
+        <Cylinder height = ' 0.5 ' radius= ' 0.5 ' side = "true"></Cylinder>
+    </Shape>
+	<!-- </Transform> -->
+								  
+	<Script DEF='conmutador' url='conmutador.js'>
+      <field accessType='inputOnly' name='estado' type='SFBool'/>
+      <field accessType='outputOnly' name='matiz' type='SFColor'/>
+	  <field accessType='initializeOnly' name='flag' type='SFBool' value='false'/>
+	</Script>
+
+	<!--  ENCENDIDO/APAGADO del LED-->
+	<ROUTE fromNode='pulsador' fromField = 'isActive' toNode='conmutador' toField='estado'/>
+	<ROUTE fromNode='conmutador' fromField='matiz' toNode='mat' toField='emissiveColor'/>
+
+	<background skyColor='0.3 0.3 0.3'/> 
+  </Scene>
+</X3D>
