@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile='Immersive'> 
+  <Scene>
+    <Shape>
+           <Text string='"Hola Mundo!"'/>
+    </Shape>
+    <Shape>
+      <Appearance>
+         <Material diffuseColor=' 1 0 0 '/>
+         <ImageTexture url='"texturas/ojo.png"'/>
+      </Appearance>
+      <Sphere radius = '1'/>
+    </Shape>
+  </Scene>
+</X3D>
