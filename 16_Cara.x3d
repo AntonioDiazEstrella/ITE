@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile='Immersive'>
+
+  <Scene>
+
+<!--Cabeza -->
+    <Shape>
+      <Appearance>
+        <Material diffuseColor='1 0 0'/>
+      </Appearance>
+      <Sphere radius='0.5'/>
+    </Shape>
+
+<!--Cejas -->
+   <Transform translation='0 0.25 0.35'>
+      <Shape>
+        <Appearance>
+          <Material diffuseColor='0.2 0.2 0.2'/>
+        </Appearance>
+        <Box size='0.6 0.05 0.2'/>
+      </Shape>
+    </Transform>
+
+<!--Ojo izquierdo -->
+    <Transform translation='0.1 0.15 0.38'>
+      <Shape DEF='ojo'>
+        <Appearance>
+          <Material diffuseColor='1 1 1'/>
+          <ImageTexture url='"texturas/ojo.png"'/>
+        </Appearance>
+        <Sphere radius='0.09'/>
+      </Shape>
+    </Transform>
+	
+<!--Ojo derecho -->
+    <Transform translation='-0.1 0.15 0.38'>
+      <Shape USE='ojo'/>
+    </Transform>
+	
+<!--Nariz-->
+    <Transform translation='0 0 0.5'>
+      <Shape>
+        <Appearance>
+          <Material diffuseColor='1 0 1'/>
+        </Appearance>
+        <Sphere radius='0.09'/>
+      </Shape>
+    </Transform>
+	
+<!--Boca -->
+    <Transform rotation='1 0 0 2' scale='3 1 1' translation='0 -0.2 0.35'>
+      <Shape>
+        <Appearance>
+          <Material diffuseColor='0 0 0'/>
+        </Appearance>
+        <Cylinder height='0.2' radius='0.05'/>
+      </Shape>
+     </Transform>
+  </Scene>
+</X3D>
