@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile='Immersive'> 
+  <Scene>
+   <Viewpoint description='vista panoramica' orientation='1 0 0 -0.35' position=' 0 20 40'/>
+   
+   <Inline url= '"9_Tablero3enRaya.x3d"'/>   
+
+   <Transform translation= '-20 1.25 -10' >
+      <Inline url= '"14_PeonMovilXZ.x3d"'/>           
+    </Transform>
+
+   <Transform translation= '-20 1.25 0' >
+      <Inline url= '"14_PeonMovilXZ.x3d"'/>           
+    </Transform>
+
+   <Transform translation= '-20 1.25 10' >
+      <Inline url= '"14_PeonMovilXZ.x3d"'/>           
+    </Transform>
+
+    <Transform translation= '20 1.25 -10' >
+      <Inline url= '"14_PeonMovilXZverde.x3d"'/>           
+    </Transform>
+
+   <Transform translation= '20 1.25 0' >
+      <Inline url= '"14_PeonMovilXZverde.x3d"'/>           
+    </Transform>
+
+   <Transform translation= '20 1.25 10' >
+      <Inline url= '"14_PeonMovilXZverde.x3d"'/>           
+    </Transform>
+
+  </Scene>
+</X3D>
