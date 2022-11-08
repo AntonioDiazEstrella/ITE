@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?> 
+<X3D profile='Immersive'> 
+  <Scene>
+  <!-- Esfera verde trasladada -->
+    <Transform translation='0 1.5 0'>
+    <Shape>
+      <Appearance>  
+              <Material DEF= 'Verde' diffuseColor='0 1 0'/>  
+      </Appearance>
+      <Sphere radius = '1'/>
+    </Shape>
+   </Transform>
+   <!--Cono verde -->
+    <Shape>
+      <Appearance>  
+              <Material USE= 'Verde'/>  
+      </Appearance>
+      <Cone bottomRadius='1' height='2' bottom='true'/>
+    </Shape>
+  </Scene>
+</X3D>
