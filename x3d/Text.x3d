@@ -35,7 +35,7 @@
         </Text>
       </Shape>
     </Transform>
-    <Transform DEF='Glyphs'
+   <!-- <Transform DEF='Glyphs'
         translation='-5.89326 0 0'>
       <Shape>
         <Appearance>
@@ -50,6 +50,6 @@
               family='"SANS"'/>
         </Text>
       </Shape>
-    </Transform>
+    </Transform> -->
   </Scene>
 </X3D>
