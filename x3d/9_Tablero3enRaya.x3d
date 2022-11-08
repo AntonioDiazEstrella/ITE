@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile='Immersive'> 
+  <Scene>
+   <Viewpoint description='vista panoramica' orientation='1 0 0 -0.35' position=' 0 20 40'/>
+   
+  <Transform translation='-10 1 15' scale ='2 2 2'> 
+      <Shape>
+           <Text string= '"Tres en raya"' >
+               <FontStyle  size= ' 2 '/>
+           </Text>
+      </Shape>
+  </Transform>
+    <Shape>
+       <Appearance>
+           <Material diffuseColor='1 0 0'/>
+           <ImageTexture url=' "texturas/3enraya.png"'/>
+       </Appearance>
+       <Box size= ' 30 0.5 30 ' />
+    </Shape>
+  </Scene>
+</X3D>
