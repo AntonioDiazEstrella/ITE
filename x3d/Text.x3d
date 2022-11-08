@@ -29,7 +29,7 @@
               shininess='0'/>
         </Appearance>
         <Text
-            string='"Hola Mundo!"'>
+            string='"Hola Mundo nuevo!"'>
           <FontStyle
               family='"SANS"'
               style='BOLD'/>
