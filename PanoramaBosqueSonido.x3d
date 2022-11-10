@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile='Immersive'>
+	<Scene>
+	<!-- https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaPanoramas/forest1Index.html-->
+		<Background  
+			backUrl =   '"texturas/panorama/forest_1_back.jpg"' 
+			bottomUrl = '"texturas/panorama/forest_1_bottom.jpg"' 
+			frontUrl =  '"texturas/panorama/forest_1_front.jpg"' 
+			leftUrl =   '"texturas/panorama/forest_1_left.jpg"' 
+			rightUrl =  '"texturas/panorama/forest_1_right.jpg"' 
+			topUrl =    '"texturas/panorama/forest_1_top.jpg"'>
+        </Background> 
+        <Sound maxBack='10' minFront='10'>
+            <AudioClip loop='false' enabled="true" url='"sonidos/amanecer.mp3"'/>
+        </Sound>
+	</Scene>
+</X3D>
