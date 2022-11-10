@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile='Immersive'>
+
+  <Scene DEF='scene'>
+
+//-----CABEZA--------------------------------------
+    <Shape>
+      <Appearance DEF='RobotColor'>
+        <Material diffuseColor='1 0 0'/>
+      </Appearance>
+      <Sphere radius='0.5'/>
+    </Shape>
+
+//------CEJAS-----------------------------------------
+    <Transform translation='0 0.25 0.35'>
+      <Shape>
+        <Appearance>
+          <Material diffuseColor='0.2 0.2 0.2'/>
+        </Appearance>
+        <Box size='0.6 0.05 0.2'/>
+      </Shape>
+    </Transform>
+
+
+//---OJO IZQUIERDO--------------------------------------
+    <Transform DEF='bola1' translation='0.1 0.15 0.38'>
+      <Shape DEF='ojo'>
+        <Appearance>
+          <Material diffuseColor='1 1 1'/>
+          <ImageTexture url='"texturas/ojo.png"'/>
+        </Appearance>
+        <Sphere radius='0.09'/>
+      </Shape>
+    </Transform>
+
+//---OJO DERECHO----------------------------------------------------
+    <Transform DEF='bola2' translation='-0.1 0.15 0.38'>
+      <Shape USE='ojo'/>
+    </Transform>
+
+
+//---NARIZ------------------------------------------------------------------
+    <Transform translation='0 0 0.5'>
+      <Shape>
+        <Appearance>
+          <Material diffuseColor='1 0 1'/>
+        </Appearance>
+        <Sphere radius='0.09'/>
+      </Shape>
+    </Transform>
+
+//---BOCA-----------------------------------------------------------------
+    <Transform DEF='cilindro' rotation='1 0 0 2' scale='3 1 1' translation='0 -0.2 0.35'>
+      <Shape>
+        <Appearance>
+          <Material diffuseColor='0 0 0'/>
+        </Appearance>
+        <Cylinder height='0.2' radius='0.05'/>
+      </Shape>
+      <TouchSensor DEF='boca'/>
+      <Sound>
+        <AudioClip DEF='grito' url='"sonidos/ataquerl.wav"'/>
+      </Sound>
+    </Transform>
+
+
+    <TimeSensor DEF='TimerOjos' loop='true'/>
+    <TimeSensor DEF='TimerGrito' startTime='-1'/>
+    <TimeSensor DEF='TimerSaltaOjos' startTime='-1'/>
+
+    <OrientationInterpolator DEF='Rot' key='0 0.25 0.5 0.75 1' 
+                                  keyValue='1 0 0 0 
+                                            1 0 0 0.5 
+                                            1 0 0 0 
+                                            1 0 0 -0.1 
+                                            1 0 0 0'/>
+    <PositionInterpolator DEF='abrirboca' key='0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1' 
+                                  keyValue='1 1 1 
+                                          2.5 1 2 
+                                            2 1 0.5 
+                                            2 1 2 
+                                          2.5 1 1
+                                            2 1 2 
+                                          2.5 1 1 
+                                            2 1 3 
+                                            2 1 1 
+                                            1 1 1 
+                                            3 1 1'/>
+    <PositionInterpolator DEF='salta' key='0 0.5 1' 
+                                  keyValue='1 1 1
+                                            2 2 2
+                                            1 1 1'/>
+
+
+     //MOVER LOS OJOS  
+    <ROUTE fromNode='TimerOjos' fromField='fraction_changed' toNode='Rot' toField='set_fraction'/>
+    <ROUTE fromNode='Rot' fromField='value_changed' toNode='bola1' toField='set_rotation'/>
+    <ROUTE fromNode='Rot' fromField='value_changed' toNode='bola2' toField='set_rotation'/>
+    
+    //AL TOCAR LA BOCA LA MUEVE
+    <ROUTE fromNode='boca' fromField='touchTime' toNode='TimerGrito' toField='set_startTime'/>
+    <ROUTE fromNode='TimerGrito' fromField='fraction_changed' toNode='abrirboca' toField='set_fraction'/>
+    <ROUTE fromNode='abrirboca' fromField='value_changed' toNode='cilindro' toField='set_scale'/>
+
+    //AL TOCAR LA BOCA HABLA
+    <ROUTE fromNode='boca' fromField='touchTime' toNode='grito' toField='set_startTime'/>
+ 
+    //AL TOCAR LA BOCA SACA LOS OJOS
+    <ROUTE fromNode='boca' fromField='touchTime' toNode='TimerSaltaOjos' toField='set_startTime'/>
+    <ROUTE fromNode='TimerSaltaOjos' fromField='fraction_changed' toNode='salta' toField='set_fraction'/>
+    <ROUTE fromNode='salta' fromField='value_changed' toNode='bola1' toField='set_scale'/>
+    <ROUTE fromNode='salta' fromField='value_changed' toNode='bola2' toField='set_scale'/>
+
+  </Scene>
+</X3D>
