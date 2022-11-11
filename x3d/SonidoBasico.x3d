@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile='Immersive'>
+	<Scene>
+		<Transform>
+			<Inline url='"Ojo.x3d"'/>
+			<TouchSensor DEF='pulsador'/>
+			<Sound maxBack='10' minFront='10' >
+				<AudioClip DEF='amanecer' url='"sonidos/willow1.wav"'/>
+			</Sound>
+		</Transform>
+		
+	<ROUTE fromNode='pulsador' fromField='touchTime' toNode='amanecer' toField='set_startTime'/>
+	
+	</Scene>
+</X3D>
