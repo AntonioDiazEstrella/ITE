@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?> 
+<X3D profile='Immersive'>
+  <Scene>
+	<NavigationInfo headlight='false'></NavigationInfo>
+    <PointLight color='0 1 0' location='0 20 0'></PointLight>
+    <Inline url='"11_PeonRojo.x3d"'/>      
+  </Scene>
+</X3D>
