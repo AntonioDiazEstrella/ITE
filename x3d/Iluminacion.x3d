@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile='Immersive'> 
+  <Scene>
+    <Viewpoint position='0 10 15' orientation='1 0 0 -0.46917'></Viewpoint>
+	<PointLight DEF= 'PUN' on='false' intensity = '1.0' color='0 1 0' location='0 10 0' shadowIntensity='0.5'></PointLight>
+
+	<Transform translation='0 4 0'>
+		<Shape>
+			<Appearance><Material diffuseColor='1 0 1'/></Appearance>
+			<Sphere radius ='0.3'/>
+		</Shape>
+		<TouchSensor DEF= 'TOUCH'></TouchSensor>
+	</Transform>
+		
+	<Shape>
+		<Appearance><Material diffuseColor='0.8 0.8 0.8'/></Appearance>
+		<Box size ='4 0.5 4'/>
+	</Shape> 
+
+<ROUTE fromNode = 'TOUCH' fromField = 'isActive' toNode= 'PUN' toField = 'on'></ROUTE>
+
+	
+  </Scene>
+</X3D>
