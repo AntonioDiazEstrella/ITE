@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile='Immersive'> 
+  <Scene>
+   <Viewpoint description='vista panoramica' orientation='1 0 0 -0.35' position=' 0 20 40'/>
+   <NavigationInfo headlight='false'></NavigationInfo>
+   <PointLight color='0 1 0' location='0 10 0'></PointLight>
+    <Shape>
+       <Appearance>
+           <Material/>
+       </Appearance>
+       <Box size= ' 30 0.5 30 ' />
+    </Shape>
+  </Scene>
+</X3D>
