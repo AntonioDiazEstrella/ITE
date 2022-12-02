@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile='Immersive'> 
+  <Scene>
+  
+        <Group>
+          <PlaneSensor DEF='Muevepeon' axisRotation =  '1 0 0 -1.57'></PlaneSensor>
+          <Transform DEF='peon'>
+             <Shape DEF= 'Caja'>
+                 <Appearance><Material diffuseColor = '1 0 0'></Material></Appearance>
+                 <Box></Box>
+             </Shape>    
+          </Transform>
+        </Group>
+        
+        <Group>
+          <CylinderSensor DEF='Muevepeon2' axisRotation =  '1 0 0 0'></CylinderSensor>
+          <Transform DEF='peon2'  translation = '0 3 0' >
+             <Shape USE= 'Caja'></Shape>   
+           </Transform>
+        </Group>
+  
+        <Group>
+          <SphereSensor DEF='Muevepeon3' axisRotation =  '1 0 0 0'></SphereSensor>
+            <Transform DEF='peon3'  translation = '0 -3 0' >
+              <Shape USE= 'Caja'></Shape>   
+            </Transform>
+        </Group>
+  
+        <ROUTE fromNode='Muevepeon' fromField='translation_changed' toNode='peon' toField='set_translation'></ROUTE>
+        <ROUTE fromNode='Muevepeon2' fromField='rotation_changed' toNode='peon2' toField='set_rotation'></ROUTE>
+        <ROUTE fromNode='Muevepeon3' fromField='rotation_changed' toNode='peon3' toField='set_rotation'></ROUTE>
+  
+  </Scene>
+</X3D>
