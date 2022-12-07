@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+ <X3D profile='Immersive'>
+  <Scene>
+    <Shape>
+       <Appearance>
+		  <Material/>
+		  <MovieTexture  DEF= 'video' url="texturas/chiquito.mpg" loop ='true'   >   </MovieTexture>
+       </Appearance>
+       <Box size = ' 1 1 1 '/>
+     </Shape>
+	 <background skyColor='1 1 1'/> 
+   </Scene>
+ </X3D>
