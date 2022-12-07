@@ -4,7 +4,7 @@
     <Shape>
        <Appearance>
 		  <Material/>
-		  <MovieTexture  DEF= 'video' url='"texturas/chiquito.mpg"' loop ='true'   >   </MovieTexture>
+		  <MovieTexture  DEF= 'video' url='"texturas/chiquito.mp4"' loop ='true'   >   </MovieTexture>
        </Appearance>
        <Box size = ' 1 1 1 '/>
      </Shape>
